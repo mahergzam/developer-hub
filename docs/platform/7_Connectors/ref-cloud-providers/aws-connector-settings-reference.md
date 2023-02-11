@@ -387,7 +387,7 @@ There are three authentication options for the AWS connector when used for AWS E
 * [AWS Access Key](#aws-access-key)
 * [Assume IAM Role on Delegate](#assume-iam-role-on-delegate)
 * [Use IRSA](#use-irsa-iam-roles-for-service-accounts)
-* [Enable cross-account access (STS Role)](#enable-cross-account-access-sts-role): Requires that the AWS CLI is installed on the Delegate. For more information, go to [Serverless and Enable cross-account access (STS Role)](#serverless-and-enable-cross-account-access-sts-role).
+[Enable cross-account access (STS Role)](#enable-cross-account-access-sts-role)
 
 For instructions for Serverless Lambda deployments, go to [Serverless Lambda CD Quickstart](../../../continuous-delivery/onboard-cd/cd-quickstarts/serverless-lambda-cd-quickstart.md).
 
@@ -593,7 +593,7 @@ Setting up IRSA credentials requires a few more steps than other methods, but it
 
 :::tip
 
-The following steps assume this is a new delegate installation and a new AWS connector. If you updating an existing delegate and AWS connector, you only need to edit the delegate YAML for your existing delegate, as described below, and select the **Use IRSA** option in your AWS connector's **Credentials** settings.
+The following steps assume this is a new delegate installation and a new AWS connector. If you are updating an existing delegate and AWS connector, you only need to edit the delegate YAML for your existing delegate, as described below, and select the **Use IRSA** option in your AWS connector's **Credentials** settings.
 
 :::
 
