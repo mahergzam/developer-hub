@@ -58,7 +58,7 @@ For example:
 
 Several policies are required to read from AWS S3, write to AWS S3, or both read and write to AWS S3.
 
-:::Tip
+:::tip
 
 If you want to use an S3 bucket that is in a separate account than the account used to set up the AWS Cloud Provider, you can grant cross-account bucket access. For more information, see [Bucket Owner Granting Cross-Account Bucket Permissions](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html) from AWS.
 
@@ -174,10 +174,6 @@ There are two [Customer Managed Policies](https://docs.aws.amazon.com/IAM/latest
 
 You can have a single policy that reads and writes to an S3 bucket.
 
-For more information, go to the following AWS documentation:
-* [Allow read and write access to objects in an S3 Bucket](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket.html)
-* [Allow read and write access to objects in an S3 Bucket, programmatically and in the console](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket-console.html).
-
 <details>
 <summary>S3 read and write policy JSON example</summary>
 
@@ -217,6 +213,10 @@ Here is a JSON example of a policy that includes AWS console access:
 ```
 
 </details>
+
+For more information, go to the following AWS documentation:
+* [Allow read and write access to objects in an S3 Bucket](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket.html)
+* [Allow read and write access to objects in an S3 Bucket, programmatically and in the console](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket-console.html).
 
 ## AWS Elastic Container Registry (ECR) policies and permissions
 
@@ -568,13 +568,13 @@ In rare cases when the delegate OS does not support `apt`, such as Red Hat Linux
 4. Save the YAML file as **harness-delegate.yml**.
 5. Apply the Delegate YAML: `kubectl apply -f harness-delegate.yml`
 
-### Serverless and enable cross-account access (STS Role)
+### Serverless cross-account access (STS Role)
 
 If you use the **Enable cross-account access (STS Role)** option in the AWS connector for a Serverless Lambda deployment, the delegate that is used by the Connector must have the AWS CLI installed. The AWS CLI is not required for the other authentication methods.
 
 For instructions on installing software with the delegate, go to [Run Initialization Scripts on Delegates](../../2_Delegates/configure-delegates/run-scripts-on-delegates.md).
 
-## AWS connector settings
+## Harness AWS connector settings
 
 The AWS connector settings include:
 * **Name:** The unique name for the connector
@@ -654,6 +654,7 @@ The following steps assume this is a new delegate installation and a new AWS con
 9. For **Credentials**, select **Use IRSA**.
 10. For **Select Connectivity Mode**, select **Connect through a Harness Delegate**, and then select the delegate you just installed.
 11. Select **Save and Continue** to verify the delegate credentials and test the connection.
+
 </details>
 
 :::caution
