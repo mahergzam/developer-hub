@@ -576,7 +576,7 @@ For instructions on installing software with the delegate, go to [Run Initializa
 
 ## AWS connector settings
 
-The AWS Connector settings include:
+The AWS connector settings include:
 * **Name:** The unique name for the connector
 * **Id:** Go to [Entity Identifier Reference](../../20_References/entity-identifier-reference.md)
 * **Description:** Text string
