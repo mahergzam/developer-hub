@@ -57,7 +57,7 @@ SCCs:
 
 ```bash
 policies=("anyuid" "hostnetwork" "hostnetwork-v2" "hostmount-anyuid" "nonroot-v2" "anyuid")
-service_accounts=("harness-platform-service" "default" "postgres" "harness-looker" "harness-default" "minio" "mongodb-replicaset-chart" "harness-timescaledb" "harness-serviceaccount" "chaos-linux-ifc-sa" "chaos-linux-ifs-sa" "chaos-machine-ifc-sa" "chaos-machine-ifs-sa" "timescaledb-backup-minio" "harness-manager" "ng-manager" "template-service")
+service_accounts=("harness-platform-service" "default" "postgres" "harness-looker" "harness-default" "minio" "mongodb-replicaset-chart" "harness-smp-timescaledb" "harness-serviceaccount" "chaos-linux-ifc-sa" "chaos-linux-ifs-sa" "chaos-machine-ifc-sa" "chaos-machine-ifs-sa" "timescaledb-backup-minio" "harness-manager" "ng-manager" "template-service")
 
 # Loop through the policies and service accounts
 for policy in "${policies[@]}"; do
